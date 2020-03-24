@@ -1,13 +1,26 @@
 [
-   {
+    {
         "id": 1,
-        "title": "UML Use Case",
-        "description": "Домашняя страница занятий по курсу "Проектирование информационных систем" (2020)"
+        "title": "Лабораторная работа 1",
+        "description": "Разработка UML Use Case",
+        "preview": "img/use-case-diagram.png"
     },
     {
         "id": 2,
-        "title": "UML Class",
-        "description": "Диаграмма классов",
-        "preview": "img/class-diagram.png"
+        "title": "Лабораторная работа 2",
+        "description": "Разработка UML Class",
+        "preview": "img/use-case-diagram.png"
+    },
+    {
+        "id": 3,
+        "title": "Лабораторная работа 3",
+        "description": "Определение требований к проекту",
+        "preview": "img/use-case-diagram.png"
+    },
+    {
+        "id": 4,
+        "title": "Лабораторная работа 4",
+        "description": "Разработка UML Component",
+        "preview": "img/use-case-diagram.png"
     }
 ]
