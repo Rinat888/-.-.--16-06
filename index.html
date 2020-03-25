@@ -2,6 +2,17 @@
 <html lang="ru" ng-app="designApp">
 
 <head>
+  <script type="text/javascript">
+  function lifeSite() {
+    var start = new Date('March 1, 2020'); // Дата создания сайта
+    var end = new Date();
+    var life = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+    var suffix = new Array("день", "дня", "дней");
+    var keys = [2, 0, 1, 1, 1, 2];
+    var mod = life % 100;
+    var suffix_key = mod > 4 && mod < 20 ? 2 : keys[Math.min(mod%10, 5)];
+    document.getElementById("life_site").innerHTML = life + " " + suffix[suffix_key];
+  }
 </script>
   <meta charset="utf-8">
   <title>?Саберов страничка?</title>
@@ -11,6 +22,10 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+  <body ng-controller="AppController" onload="lifeSite()">
+  <p style="text-align: right;">Этот сайт существует уже:
+    <span id="life_site" style="font-size: 120%; font-weight: bold;"></span>
+  </p>
   <md-toolbar layout="row" class="md-toolbar-tools">
     <md-button class="menu md-icon-button" hide-gt-xs ng-click="toggle()" aria-label="Show User List">
       <md-icon md-font-set="md">menu</md-icon>
